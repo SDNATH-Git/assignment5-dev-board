@@ -15,3 +15,10 @@ document.getElementById('colorButton').addEventListener('click', function() {
 document.getElementById('Clear-btn').addEventListener('click',function(){
     document.getElementById('section').innerHTML = '';
 })
+
+// discover-section btn 
+document.getElementById('discover-section').addEventListener('click',function(){
+    window.location.href = "main.html";
+})
+
+

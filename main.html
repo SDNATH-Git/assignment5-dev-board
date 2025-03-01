@@ -10,21 +10,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="grid grid-cols-2 justify-">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
-        <div>05</div>
-        <div>06</div>
-    </div>
-    <span id="time"></span>
+<body class="bg-[#F4F7FF] px-20 py-10">
+    <!-- navbar  -->
+    <header>
+        <nav class="flex justify-between bg-[#FFFFFF] px-5 py-3 rounded-2xl ">
+            <div class="flex items-center gap-1">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="text-black font-extrabold">Board</span></h1>
+            </div>
 
+            <button id="back-btn" class="btn btn-primary bg-[#3752FD] text-white text-xl font-medium">Back to
+                Desk</button>
+        </nav>
+    </header>
+
+    <!-- script btn  -->
     <script>
-       
-
-
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.location.href = "index.html";
+        })
     </script>
 
 </body>
