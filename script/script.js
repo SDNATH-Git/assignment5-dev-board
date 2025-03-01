@@ -15,10 +15,11 @@ if(assigned > 0){
     // New Section add 
     const addSection = document.getElementById('section');
     const title1 = document.getElementById('title1').innerText;
+    const currentTime = updateTime();
     const div = document.createElement('div');
     div.classList.add('bg-[#F4F7FF]','p-2', 'rounded-xl','mt-2') 
     div.innerHTML=`
-    <h1>You have completed the task ${title1} at <span id="time"> </span> </h1> 
+    <h1>You have completed the task ${title1} at ${currentTime} </h1> 
     `
     addSection.appendChild(div); 
 

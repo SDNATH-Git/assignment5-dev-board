@@ -23,17 +23,14 @@ document.getElementById('year').innerText = fullDate;
 // update time
 function updateTime() {
     const date = new Date();
-    const time = date.toLocaleTimeString('en-US', { 
+    return date.toLocaleTimeString('en-US', { 
         hour: '2-digit', 
         minute: '2-digit', 
         second: '2-digit', 
         hour12: true 
     });
 
-    // Update time in HTML
-    document.getElementById('time').innerText = time;  // e.g., 12:48:15 PM
-    // console.log(time);
 }
 
-setInterval(updateTime, 1000);
-updateTime();
+
+
