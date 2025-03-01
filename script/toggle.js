@@ -9,7 +9,7 @@ function setInnerText(id,value){
 }
 
 
-// weak-monthy-year
+// weak-month-year
 const date = new Date();  
 const optionsWeekday = { weekday: 'short' };
 const optionsDate = { month: 'long', day: '2-digit', year: 'numeric' };
@@ -31,6 +31,10 @@ function updateTime() {
     });
 
 }
+
+
+
+
 
 
 
