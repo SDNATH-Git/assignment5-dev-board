@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#F4F7FF] px-20 py-10">
+<body class="bg-[#F4F7FF] px-20 py-10 min-h-screen">
     <!-- navbar  -->
     <header>
         <nav class="flex justify-between bg-[#FFFFFF] px-5 py-3 rounded-2xl ">
@@ -23,6 +23,123 @@
                 Desk</button>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h1 class="text-2xl font-bold text-center py-4">Blogs</h1>
+            <!-- Question-1  -->
+            <div class="bg-[#FFFFFF] px-5 py-3 rounded-xl">
+                <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?
+                </h1>
+                <p class="border-t-2 my-4"></p>
+                <p>
+                    In JavaScript, there are multiple methods for choosing an element in the Document Object Model
+                    (DOM). Here are the most common methods: <br> <br>
+                    1.getElementById(): <br>
+                    An element is chosen using this method based on its id attribute. One element is returned. Example
+                    <br>
+                    const element = document.getElementById('elementId');
+                    <br> <br>
+                    2.getElementsByClassName(): <br>
+                    This method selects all elements that have a specific class name. It returns a live HTMLCollection
+                    of elements.Example: <br>
+                    const elements = document.getElementsByClassName('className');
+                    <br> <br>
+                    3.getElementsByTagName(): <br>
+                    This method selects all elements with a specified tag name. It returns a live
+                    HTMLCollection.Example: <br>
+                    const elements = document.getElementsByTagName('div');
+                </p>
+
+            </div>
+
+            <!-- Question-2  -->
+            <div class="bg-[#FFFFFF] px-5 py-3 rounded-xl mt-5">
+                <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ? </h1>
+                <p class="border-t-2 my-4"></p>
+                <div>
+                    <h1>The difference between innerHTML, innerText, and textContent :-</h1>
+                    <h1>innerHTML:</h1>
+                    <p>Gets/sets HTML content (including tags). It can be slow and exposes you to XSS risks.</p>
+
+                    <h1>innerText:</h1>
+                    <p>Gets/sets visible text, excluding HTML tags. Considers styling (e.g., hidden text isn’t
+                        retrieved). Slower than
+                        textContent.</p>
+
+                    <h1>textContent:</h1>
+                    <p>Gets/sets raw text, excluding HTML tags. Doesn’t consider styling (e.g., hidden text is
+                        included). Fastest.</p>
+
+                </div>
+
+            </div>
+            <!-- Question-3 -->
+            <div class="bg-[#FFFFFF] px-5 py-3 rounded-xl mt-5">
+                <h1 class="text-xl font-bold">Question-3: What is event delegation in the DOM? </h1>
+                <p class="border-t-2 my-4"></p>
+                <div>
+                    <h1>Event delegation is a technique where you attach a single event listener to a parent element
+                        instead of individual child
+                        elements. The parent listens for events on its children using event bubbling, improving
+                        performance and handling dynamic
+                        elements easily. <br>
+                        Example:</h1>
+                    <p>document.getElementById('parent').addEventListener('click', function(event) { <br>
+                        if (event.target && event.target.matches('button')) {<br>
+                        console.log('Button clicked');<br>
+                        }
+                        });
+                    </p>
+                </div>
+
+            </div>
+            <!-- Question-4  -->
+            <div class="bg-[#FFFFFF] px-5 py-3 rounded-xl mt-5">
+                <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM? </h1>
+                <p class="border-t-2 my-4"></p>
+                <div>
+                    <h1>
+                        Event bubbling is a mechanism in the DOM where an event starts from the target element and
+                        "bubbles up" to its parent
+                        elements. This means the event is triggered on the target first, then propagates upward through
+                        the DOM tree, triggering
+                        event listeners on each ancestor element. <br>
+                        Example:
+                    </h1>
+                    <p>
+                        document.getElementById('parent').addEventListener('click', function() { <br>
+                        console.log('Parent clicked'); <br>
+                        });
+                    </p>
+                </div>
+
+            </div>
+            <!-- Question-5  -->
+            <div class="bg-[#FFFFFF] px-5 py-3 rounded-xl mt-5">
+                <h1 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <p class="border-t-2 my-4"></p>
+                <div>
+                    <h1>To create, add, and remove elements in JavaScript:</h1>
+                    <h2>1.Create an element:</h2>
+                    <p>Example: <br> const newElement = document.createElement('div');</p> <br>
+
+                    <h2>2.Add an element:</h2>
+                    <p>Example: <br> const parent = document.getElementById('parent'); <br>
+                        parent.appendChild(newElement);</p> <br>
+
+                    <h2>3.Remove an element:</h2>
+                    <p>Example: <br>newElement.remove();</p>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+
 
     <!-- script btn  -->
     <script>
