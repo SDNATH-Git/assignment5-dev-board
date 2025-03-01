@@ -24,7 +24,7 @@
             <div class="flex items-center gap-4 ">
                 <div class="flex items-center gap-1 bg-[#F4F7FF] p-2 rounded-xl">
                     <img src="./assets/checkbox.png" alt="">
-                    <h1 class="text-xl font-extrabold">23</h1>
+                    <h1 id="navbar" class="text-xl font-extrabold">23</h1>
                 </div>
                 <button class="bg-[#F4F7FF] p-1 rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
             </div>
@@ -48,7 +48,7 @@
 
                         <div>
                             <h1>Task Assigned </h1>
-                            <h2 class="text-xl font-extrabold">05</h2>
+                            <h2 id="assigned" class="text-xl font-extrabold">06</h2>
                         </div>
                     </div>
                     <!-- card-2  -->
@@ -85,7 +85,7 @@
                                 <h1 class="text-[#a0a3a3] text-xs font-medium">Deadline</h1>
                                 <h2 class="text-xs font-medium">21 March 2025</h2>
                             </div>
-                            <button
+                            <button id="btn-1"
                                 class="btn btn-primary bg-[#3752FD] text-white text-xs font-medium">Completed</button>
                         </div>
 
@@ -195,11 +195,21 @@
                 </div>
                 <p class="border-b-2 py-2"></p>
 
+                <section id="section">
+                    <div id="NewSection">
+
+                    </div>
+                </section>
+
             </div>
 
         </section>
 
     </main>
+
+    <!-- js file  -->
+    <script src="./script/script.js"></script>
+    <script src="./script/toggle.js"></script>
 
 </body>
 
